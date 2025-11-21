@@ -1,0 +1,21 @@
+Console.WriteLine("ingrese el mensaje :");
+cadena nombre = Console.ReadLine();
+char[] NOMARRAY = nombre.ToCharArray();
+
+char[] frases1 = "Bienvenidos".ToCharArray();
+
+char[] resultado = new char[frases1.Length + NOMARRAY.Length];
+
+for (int i = 0; i < frases1.Length; i++)
+{
+resultado[i] = frases1[i];
+}
+
+for (int i = 0; i < NOMARRAY.Length; i++)
+{
+resultado[frases1.Length + i] = NOMARRAY[i];
+
+}
+string mensajes = new string(resultado);
+
+Console.WriteLine("\n" + mensajes);
