@@ -1,0 +1,19 @@
+Console.Write("Digite una frase: ");
+
+string fraseOriginal = Console.ReadLine();
+if (string.IsNullOrEmpty(fraseOriginal))
+{
+    Console.WriteLine("No se ingresó ninguna frase. Saliendo del programa.");
+    return;
+}
+char[] arrayDeCaracteres = fraseOriginal.ToCharArray();
+Array.Reverse(arrayDeCaracteres);
+string fraseInvertida = new string(arrayDeCaracteres);
+Console.WriteLine("\nFrase invertida:");
+Console.WriteLine(fraseInvertida);
+Console.Write("C[ ] = ");
+for (int i = 0; i < arrayDeCaracteres.Length; i++)
+{
+    Console.Write($"[{arrayDeCaracteres[i]}]");
+}
+Console.WriteLine();
