@@ -1,0 +1,35 @@
+Console.WriteLine("ingrese el mensaje :");
+char[] nombre4 = Console.ReadLine().ToCharArray();
+int mensaje4 = nombre4.Longitud;
+
+int recuentoA = 0, recuentoE = 0, recuentoI = 0, recuentoO = 0, recuentoU = 0;
+
+for (int i = 0; i < mensaje4; i++)
+{
+switch (char.ToUpper(nombre4[i]))
+{
+case 'A':
+countA++;
+break;
+case 'E':
+countE++;
+break;
+
+     case 'I':
+         countI++;
+         break;
+     case 'O':
+         countO++;
+         break;
+     case 'U':
+         countU++;
+         break;
+ }
+}
+
+Console.WriteLine("\nContador de vocales.");
+Console.WriteLine("* Vocal a: {0}", countA);
+Console.WriteLine("* Vocal e: {0}", countE);
+Console.WriteLine("* Vocal i: {0}", countI);
+Console.WriteLine("* Vocal o: {0}", countO);
+Console.WriteLine("* Vocal u: {0}", countU);
