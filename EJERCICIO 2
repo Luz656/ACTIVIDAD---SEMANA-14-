@@ -1,0 +1,21 @@
+char[] letras = nuevo char[4];
+letras[0] = 'H';
+letras[1] = 'o';
+letras[2] = 'l';
+letras[3] = 'a';
+
+char[] frase = new char[] { 'M', 'u', 'n', 'd', 'o' };
+
+string hel = "¡BIENVENIDO AL PERÚ¡";
+char[] FRA = hel.ToCharArray();
+
+// 3) Inicializar a partir de una cadena (string -> char[])
+
+Array.Resize(ref letras, letras.Length);
+Console.WriteLine(""{0}", EL TAMAÑO DEL ARRAYS ={1}", new string(letras), letras.Length);
+
+Array.Resize(ref frase, frase.Length);
+Console.WriteLine(""{0}", EL TAMAÑO DEL ARRAYS ={1}", new string(frase), frase.Length);
+
+Array.Resize(ref FRA, FRA.Length);
+Console.WriteLine(""{0}", EL TAMAÑO DEL ARRAYS ={1}", new string(FRA), FRA.Length);
