@@ -1,0 +1,13 @@
+Console.WriteLine("ingrese el mensaje: ");
+mensaje de cadena = Console.ReadLine();
+
+char[] caracteres = mensaje.ToArray();
+Consola.WriteLine();
+Console.WriteLine("mensaje ingresado: ");
+Console.WriteLine("mensaje[{0}]= ", mensaje.Length);
+
+for (int i = 0; i < mensaje.Length; i++)
+{
+Console.WriteLine("[{0}]", mensaje[i]);
+}
+
