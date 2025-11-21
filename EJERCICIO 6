@@ -1,0 +1,27 @@
+Console.Write("Digite un símbolo: ");
+
+linea de cadena = Console.ReadLine();
+if (linea.Length == 0)
+{
+Console.WriteLine("No se ingresará ningún carácter.");
+}
+else
+{
+char c = linea[0];
+tipo de cadena;
+if (char.IsLetter(c))
+{
+tipo = "una letra";
+}
+else if (char.IsDigit(c))
+{
+tipo = "un número";
+}
+else
+{
+tipo = "un símbolo";
+}
+
+ // Mostrar el resultado
+ Console.WriteLine($"\n* Resultado: '{c}' es {tipo}.");
+}
